@@ -3,7 +3,7 @@ interface Rating {
   code: string;
   humanReadable: string;
 }
-export interface User {
+export interface VatsimUser {
   id: string;
   rating: Rating;
   pilotRating: Rating;

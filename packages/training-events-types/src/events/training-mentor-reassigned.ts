@@ -1,15 +1,15 @@
-import { Member, TrainingEventMetadata } from "../types";
+import { Member, TrainingEventMetadata } from '../types';
 
-const name = 'training-mentor-reassigned'
+const name = 'training-mentor-reassigned';
 
 export type TrainingMentorReassignedEventData = {
-  name: typeof name
-  trainingId: string
+  name: typeof name;
+  trainingId: string;
   payload: {
-    mentor: Member
-    assignedBy: Member
-  }
-}
+    mentor: Member;
+    assignedBy: Member;
+  };
+};
 
-export type TrainingMentorReassignedEvent = TrainingEventMetadata & TrainingMentorReassignedEventData
-
+export type TrainingMentorReassignedEvent = TrainingEventMetadata &
+  TrainingMentorReassignedEventData;

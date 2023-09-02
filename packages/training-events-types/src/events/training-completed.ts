@@ -1,16 +1,19 @@
+import {
+  OutcomeReason,
+  OutcomeReasonDetailed,
+  TrainingEventMetadata,
+} from '../types';
 
-import { OutcomeReason, OutcomeReasonDetailed, TrainingEventMetadata } from "../types";
-
-const name = 'training-completed'
+const name = 'training-completed';
 
 export type TrainingCompletedEventData = {
-  trainingId: string,
-  name: typeof name
+  trainingId: string;
+  name: typeof name;
   payload: {
-    reason: OutcomeReason
-    reasonDetailed: OutcomeReasonDetailed
-  }
-}
+    reason: OutcomeReason;
+    reasonDetailed: OutcomeReasonDetailed;
+  };
+};
 
-export type TrainingCompletedEvent = TrainingEventMetadata & TrainingCompletedEventData
-
+export type TrainingCompletedEvent = TrainingEventMetadata &
+  TrainingCompletedEventData;

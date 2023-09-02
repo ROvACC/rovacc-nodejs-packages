@@ -1,1 +1,1 @@
-export * from './lib/vatsim-types';
+export * from './src/vatsim-types';

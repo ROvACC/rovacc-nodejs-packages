@@ -1,3 +1,4 @@
+export type VatsimRegion = 'AMAS' | 'APAC' | 'EMEA';
 interface Rating {
   rating: number;
   code: string;

@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.0.4](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.0.3...vatsim-types-0.0.4) (2023-09-02)
+
+
+### Bug Fixes
+
+* use vatsim region ([1de4b39](https://github.com/rovacc/rovacc-nodejs-packages/commit/1de4b391d07bacac1446ed2ec8226db7d2361385))
+
 ## [0.0.3](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.0.2...vatsim-types-0.0.3) (2023-09-02)
 
 

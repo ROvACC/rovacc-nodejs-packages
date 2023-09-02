@@ -21,6 +21,9 @@ jobs:
       - uses: nrwl/nx-set-shas@v3
         with:
           main-branch-name: 'master'
+      - uses: fregante/setup-git-user@v2
+      # - run: git config --global user.email "webmaster@rovacc.ro"
+      # - run: git config --global user.name "Github Action"
       - run: npm ci
 
       - name: Formt Check

@@ -1,12 +1,7 @@
-name: Publish Packages
-
-on:
-  push:
-    branches:
-      - master
-
+name: Install/Build/Lint/Test on PR
+'on': pull_request
 jobs:
-  publish-to-npm:
+  check-pr-is-compliant:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Node.js
@@ -34,6 +29,3 @@ jobs:
 
       - name: Test
         run: npx nx affected --target=test --parallel=1
-
-      - name: Verify and Publish
-        run: npx nx affected --target=verify --parallel=1

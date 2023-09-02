@@ -1,6 +1,6 @@
 export type VatsimRegion = 'AMAS' | 'APAC' | 'EMEA';
 
-interface Rating {
+export interface VatsimRating {
   rating: number;
   code: string;
   humanReadable: string;
@@ -8,9 +8,9 @@ interface Rating {
 
 export interface VatsimUser {
   id: string;
-  rating: Rating;
-  pilotRating: Rating;
-  militaryRating: Rating;
+  rating: VatsimRating;
+  pilotRating: VatsimRating;
+  militaryRating: VatsimRating;
   suspDate: Date;
   regDate: Date;
   region: VatsimRegion;

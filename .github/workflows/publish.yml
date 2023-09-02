@@ -25,6 +25,8 @@ jobs:
       # - run: git config --global user.email "webmaster@rovacc.ro"
       # - run: git config --global user.name "Github Action"
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Formt Check
         run: npx nx format:check

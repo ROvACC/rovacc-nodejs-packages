@@ -1,19 +1,28 @@
 name: Install/Build/Lint/Test on PR
 'on': pull_request
 jobs:
-  build-and-test:
+  check-pr-is-compliant:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
+        with:
+          main-branch-name: 'master'
+      - run: npm ci
+
+      - name: Formt Check
+        run: npx nx format:check
+
+      - name: Lint
+        run: npx nx affected --target=lint --parallel=1
 
       - name: Lint
         run: npx nx affected --target=lint --parallel=1

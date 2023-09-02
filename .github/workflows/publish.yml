@@ -36,4 +36,4 @@ jobs:
         run: npx nx affected --target=test --parallel=1
 
       - name: Verify and Publish
-        run: npx nx affected --target=verify --parallel=1
+        run: npx nx affected --target=version --parallel=1

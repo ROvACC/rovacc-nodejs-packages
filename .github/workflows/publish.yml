@@ -40,6 +40,9 @@ jobs:
       - name: Test
         run: npx nx affected --target=test --parallel=1
 
+      - name: Login to npm
+        run: npm adduser
+
       - name: Create version and publish
         run: npx nx affected --target=version --parallel=1
 

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@rovacc/training-events": ["packages/training-events/src/index.ts"],
       "@rovacc/training-events-types": [
         "packages/training-events-types/src/index.ts"
       ],

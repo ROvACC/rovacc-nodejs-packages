@@ -21,6 +21,7 @@
     "@nx/linter": "16.7.4",
     "@nx/vite": "16.7.4",
     "@types/node": "18.7.1",
+    "@types/uuid": "^9.0.3",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "@vitest/coverage-c8": "~0.32.0",
@@ -45,5 +46,8 @@
   "nx": {
     "includedScripts": []
   },
-  "dependencies": {}
+  "dependencies": {
+    "firebase-admin": "^11.10.1",
+    "uuid": "^9.0.0"
+  }
 }

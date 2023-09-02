@@ -1,0 +1,55 @@
+{
+  "name": "training-events",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/training-events/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/training-events"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/packages/training-events"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/training-events/**/*.ts",
+          "packages/training-events/package.json"
+        ]
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional",
+        "baseBranch": "master",
+        "commitMessageFormat": "chore({projectName}): release version ${version} skip-checks:true [skip ci]",
+        "postTargets": ["training-events-types:publish"]
+      }
+    },
+    "publish": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public"
+      }
+    },
+    "pretest": {
+      "command": "docker-compose -f packages/training-events/docker-compose.yml up -d"
+    },
+    "posttest": {
+      "command": "docker-compose -f packages/training-events/docker-compose.yml down"
+    }
+  },
+  "tags": []
+}

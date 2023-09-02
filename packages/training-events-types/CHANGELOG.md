@@ -2,6 +2,14 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.0.3](https://github.com/rovacc/rovacc-nodejs-packages/compare/training-events-types-0.0.2...training-events-types-0.0.3) (2023-09-02)
+
+
+### Bug Fixes
+
+* bump local ([c6a5996](https://github.com/rovacc/rovacc-nodejs-packages/commit/c6a5996afaf813a0d3e70534f1586df4bda6f6a0))
+* local ([b3ff1ee](https://github.com/rovacc/rovacc-nodejs-packages/commit/b3ff1eeeeb240e1fa78c8b1b4d00d42b50ea8d41))
+
 ## [0.0.2](https://github.com/rovacc/rovacc-nodejs-packages/compare/training-events-types-0.0.1...training-events-types-0.0.2) (2023-09-02)
 
 

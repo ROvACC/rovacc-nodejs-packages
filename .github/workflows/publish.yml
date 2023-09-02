@@ -38,5 +38,8 @@ jobs:
       - name: Test
         run: npx nx affected --target=test --parallel=1
 
-      - name: Verify and Publish
+      - name: Create version and publish
         run: npx nx affected --target=version --parallel=1
+
+      - name: Push to repo
+        run: git push https://${{ secrets.GH_PAT_WEBMASTER }}@github.com/ROvACC/rovacc-nodejs-packages.git HEAD:master

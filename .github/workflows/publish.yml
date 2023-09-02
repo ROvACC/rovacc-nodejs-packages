@@ -19,6 +19,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          persist-credentials: false
+
       - uses: nrwl/nx-set-shas@v3
         with:
           main-branch-name: 'master'
@@ -40,11 +42,6 @@ jobs:
 
       - name: Test
         run: npx nx affected --target=test --parallel=1
-
-      # - name: Login to npm
-      #   run: npm adduser
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Create version and publish
         run: npx nx affected --target=version --parallel=1

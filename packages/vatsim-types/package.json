@@ -1,6 +1,6 @@
 {
   "name": "@rovacc/vatsim-types",
-  "version": "0.2.3",
+  "version": "0.2.2",
   "dependencies": {},
   "main": "./index.js",
   "module": "./index.mjs",

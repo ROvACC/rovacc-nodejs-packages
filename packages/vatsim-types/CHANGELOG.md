@@ -2,6 +2,19 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.0](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.1.0...vatsim-types-0.2.0) (2023-09-02)
+
+
+### Features
+
+* another minor bump ([#17](https://github.com/rovacc/rovacc-nodejs-packages/issues/17)) ([1797754](https://github.com/rovacc/rovacc-nodejs-packages/commit/17977544abb9b414f76ff6f3aaba4906647d1e58))
+
+
+### Bug Fixes
+
+* bump packages ([0c2cb7c](https://github.com/rovacc/rovacc-nodejs-packages/commit/0c2cb7c0ec6a410037e7645a7abf846e059f3e64))
+* targets ([29e9a86](https://github.com/rovacc/rovacc-nodejs-packages/commit/29e9a86c276221f5780c9b88f7e5a33f19663c49))
+
 ## [0.0.4](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.0.3...vatsim-types-0.0.4) (2023-09-02)
 
 

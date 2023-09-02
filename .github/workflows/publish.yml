@@ -6,24 +6,34 @@ on:
       - master
 
 jobs:
-  main:
-    name: Nx Cloud - Main Job
-    uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.0
-    with:
-      main-branch-name: master
-      number-of-agents: 1
-      init-commands: |
-        npx nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
-      parallel-commands: |
-        npx nx-cloud record -- npx nx format:check
-      parallel-commands-on-agents: |
-        npx nx affected --target=lint --parallel=3
-        npx nx affected --target=test --parallel=3 --ci --code-coverage
-        npx nx affected --target=build --parallel=3
-        npx nx affected --target=version --parallel=3
+  publish-to-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
 
-  agents:
-    name: Nx Cloud - Agents
-    uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.0
-    with:
-      number-of-agents: 1
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
+        with:
+          main-branch-name: 'master'
+      - run: npm ci
+
+      - name: Formt Check
+        run: npx nx format:check
+
+      - name: Lint
+        run: npx nx affected --target=lint --parallel=1
+
+      - name: Build
+        run: npx nx affected --target=build --parallel=1
+
+      - name: Test
+        run: npx nx affected --target=test --parallel=1
+
+      - name: Verify and Publish
+        run: npx nx affected --target=verify --parallel=1

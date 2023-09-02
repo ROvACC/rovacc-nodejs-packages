@@ -39,6 +39,7 @@
         "preset": "conventional",
         "push": true,
         "baseBranch": "master",
+        "commitMessageFormat": "chore(${projectName}): release version ${version} skip-checks:true [skip ci]",
         "postTargets": ["vatsim-types:npm"]
       }
     },

@@ -24,9 +24,6 @@ jobs:
       - name: Lint
         run: npx nx affected --target=lint --parallel=1
 
-      - name: Lint
-        run: npx nx affected --target=lint --parallel=1
-
       - name: Build
         run: npx nx affected --target=build --parallel=1
 

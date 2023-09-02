@@ -35,7 +35,7 @@
         "preset": "conventional",
         "baseBranch": "master",
         "commitMessageFormat": "chore({projectName}): release version ${version} skip-checks:true [skip ci]",
-        "postTargets": ["pulish"]
+        "postTargets": ["publish"]
       }
     },
     "publish": {

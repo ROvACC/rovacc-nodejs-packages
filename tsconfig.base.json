@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@rovacc/training-events-types": [
+        "packages/training-events-types/src/index.ts"
+      ],
       "@rovacc/vatsim-types": ["packages/vatsim-types/src/index.ts"]
     }
   },

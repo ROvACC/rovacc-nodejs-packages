@@ -18,6 +18,11 @@ jobs:
           main-branch-name: 'master'
       - run: npm ci
 
+      - name: Setup name and email
+        run: |
+          git config --global user.email "webmaster@rovacc.ro"
+          git config --global user.name "Github Action"
+
       - name: Formt Check
         run: npx nx format:check
 

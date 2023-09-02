@@ -1,0 +1,25 @@
+name: Install/Build/Lint/Test on PR
+'on': pull_request
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint
+        run: npx nx affected --target=lint --parallel=1
+
+      - name: Build
+        run: npx nx affected --target=build --parallel=1
+
+      - name: Test
+        run: npx nx affected --target=test --parallel=1

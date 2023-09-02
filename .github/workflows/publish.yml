@@ -1,4 +1,4 @@
-name: Publish
+name: Publish Packages
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.13.0
     with:
       main-branch-name: master
-      number-of-agents: 3
+      number-of-agents: 1
       init-commands: |
         npx nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
       parallel-commands: |
@@ -21,9 +21,10 @@ jobs:
         npx nx affected --target=lint --parallel=3
         npx nx affected --target=test --parallel=3 --ci --code-coverage
         npx nx affected --target=build --parallel=3
+        npx nx affected --target=version --parallel=3
 
   agents:
     name: Nx Cloud - Agents
     uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.13.0
     with:
-      number-of-agents: 3
+      number-of-agents: 1

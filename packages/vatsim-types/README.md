@@ -1,11 +1,3 @@
-# vatsim-types
+# Vatsim Types
 
-This library was generated with [Nx](https://nx.dev).
-
-## Building
-
-Run `nx build vatsim-types` to build the library.
-
-## Running unit tests
-
-Run `nx test vatsim-types` to execute the unit tests via [Jest](https://jestjs.io).
+This library is an abstraction on top of the data provided by Vatsim API

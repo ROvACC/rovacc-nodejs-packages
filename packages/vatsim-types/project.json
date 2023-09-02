@@ -11,10 +11,6 @@
         "outputPath": "dist/packages/vatsim-types"
       }
     },
-    "publish": {
-      "command": "node tools/scripts/publish.mjs vatsim-types {args.ver} {args.tag}",
-      "dependsOn": ["build"]
-    },
     "test": {
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
@@ -39,11 +35,12 @@
         "preset": "conventional",
         "baseBranch": "master",
         "commitMessageFormat": "chore(${projectName}): release version ${version} skip-checks:true [skip ci]",
-        "postTargets": ["vatsim-types:npm"]
+        "postTargets": ["publish"]
       }
     },
-    "npm": {
+    "publish": {
       "executor": "ngx-deploy-npm:deploy",
+      "dependsOn": ["build"],
       "options": {
         "access": "public"
       }

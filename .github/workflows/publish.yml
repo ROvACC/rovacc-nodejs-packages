@@ -42,9 +42,13 @@ jobs:
 
       - name: Login to npm
         run: npm adduser
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Create version and publish
         run: npx nx affected --target=version --parallel=1
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Push to repo
         run: git push https://${{ secrets.GH_PAT_WEBMASTER }}@github.com/ROvACC/rovacc-nodejs-packages.git HEAD:master

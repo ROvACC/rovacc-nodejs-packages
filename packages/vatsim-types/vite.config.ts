@@ -1,9 +1,9 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vite'
-
-import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin'
-import dts from 'vite-plugin-dts'
-import * as path from 'path'
+import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import dts from 'vite-plugin-dts';
+import * as path from 'path';
 
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/vatsim-types',
@@ -16,6 +16,14 @@ export default defineConfig({
     }),
 
     nxViteTsPaths(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'README.md',
+          dest: '',
+        },
+      ],
+    }),
   ],
 
   // Uncomment this if you are using workers.
@@ -49,4 +57,4 @@ export default defineConfig({
     environment: 'node',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
-})
+});

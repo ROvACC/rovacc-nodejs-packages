@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@rovacc/membership-events": ["packages/membership-events/src/index.ts"],
+      "@rovacc/membership-events-types": [
+        "packages/membership-events-types/src/index.ts"
+      ],
       "@rovacc/training-events-types": [
         "packages/training-events-types/src/index.ts"
       ],

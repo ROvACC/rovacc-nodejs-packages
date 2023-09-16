@@ -1,0 +1,52 @@
+{
+  "name": "membership-events-types",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/membership-events-types/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/membership-events-types",
+        "main": "packages/membership-events-types/src/index.ts",
+        "tsConfig": "packages/membership-events-types/tsconfig.lib.json",
+        "assets": ["packages/membership-events-types/*.md"]
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional",
+        "baseBranch": "master",
+        "commitMessageFormat": "chore({projectName}): release version ${version} skip-checks:true [skip ci]",
+        "postTargets": ["membership-events-types:publish"]
+      }
+    },
+    "publish": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/membership-events-types/**/*.ts",
+          "packages/membership-events-types/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/packages/membership-events-types"
+      }
+    }
+  },
+  "tags": []
+}

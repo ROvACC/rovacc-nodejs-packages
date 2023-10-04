@@ -1,3 +1,2 @@
-export * from './src/atcsession';
-export * from './src/members';
-export * from './src/vatsim-connect';
+export * from './src/auth';
+export * from './src/api';

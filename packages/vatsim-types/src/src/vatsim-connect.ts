@@ -1,62 +1,62 @@
-export interface VatsimConnectUserResponse {
+export type VatsimConnectUserResponse = {
   data: Data;
-}
+};
 
-export interface Data {
+export type Data = {
   cid: string;
   personal: Personal;
   vatsim: Vatsim;
   oauth: Oauth;
-}
+};
 
-export interface Personal {
+export type Personal = {
   name_first: string;
   name_last: string;
   name_full: string;
   email: string;
   country: Country;
-}
+};
 
-export interface Country {
+export type Country = {
   id: string;
   name: string;
-}
+};
 
-export interface Vatsim {
+export type Vatsim = {
   rating: Rating;
   pilotrating: Pilotrating;
   division: Division;
   region: Region;
   subdivision: Subdivision;
-}
+};
 
-export interface Rating {
+export type Rating = {
   id: number;
   long: string;
   short: string;
-}
+};
 
-export interface Pilotrating {
+export type Pilotrating = {
   id: number;
   long: string;
   short: string;
-}
+};
 
-export interface Division {
+export type Division = {
   id: string | null;
   name: string | null;
-}
+};
 
-export interface Region {
+export type Region = {
   id: string | null;
   name: string | null;
-}
+};
 
-export interface Subdivision {
+export type Subdivision = {
   id: string | null;
   name: string | null;
-}
+};
 
-export interface Oauth {
+export type Oauth = {
   token_valid: string;
-}
+};

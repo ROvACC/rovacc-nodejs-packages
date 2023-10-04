@@ -4,17 +4,15 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 ## [0.3.0](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.2.3...vatsim-types-0.3.0) (2023-10-04)
 
-
 ### Features
 
-* adds vatsim connect type ([#22](https://github.com/rovacc/rovacc-nodejs-packages/issues/22)) ([6f290ce](https://github.com/rovacc/rovacc-nodejs-packages/commit/6f290ce749775213b2f37d796e8b7dffbd88ee1b))
-* try fix ([#23](https://github.com/rovacc/rovacc-nodejs-packages/issues/23)) ([3b68279](https://github.com/rovacc/rovacc-nodejs-packages/commit/3b68279bc1fe48f14f25b97028ad561c185952d5))
-
+- adds vatsim connect type ([#22](https://github.com/rovacc/rovacc-nodejs-packages/issues/22)) ([6f290ce](https://github.com/rovacc/rovacc-nodejs-packages/commit/6f290ce749775213b2f37d796e8b7dffbd88ee1b))
+- try fix ([#23](https://github.com/rovacc/rovacc-nodejs-packages/issues/23)) ([3b68279](https://github.com/rovacc/rovacc-nodejs-packages/commit/3b68279bc1fe48f14f25b97028ad561c185952d5))
 
 ### Bug Fixes
 
-* bump ([#20](https://github.com/rovacc/rovacc-nodejs-packages/issues/20)) ([7835cf9](https://github.com/rovacc/rovacc-nodejs-packages/commit/7835cf9eb4c47289872f0483e80233b7d50df67b))
-* bump ([#21](https://github.com/rovacc/rovacc-nodejs-packages/issues/21)) ([a27a56d](https://github.com/rovacc/rovacc-nodejs-packages/commit/a27a56d132f34545071a74f465b72fe4467c83dc))
+- bump ([#20](https://github.com/rovacc/rovacc-nodejs-packages/issues/20)) ([7835cf9](https://github.com/rovacc/rovacc-nodejs-packages/commit/7835cf9eb4c47289872f0483e80233b7d50df67b))
+- bump ([#21](https://github.com/rovacc/rovacc-nodejs-packages/issues/21)) ([a27a56d](https://github.com/rovacc/rovacc-nodejs-packages/commit/a27a56d132f34545071a74f465b72fe4467c83dc))
 
 ## [0.2.4](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.2.3...vatsim-types-0.2.4) (2023-09-02)
 

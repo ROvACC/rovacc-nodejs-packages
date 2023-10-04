@@ -4,27 +4,24 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 ## [0.3.1](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.3.0...vatsim-types-0.3.1) (2023-10-04)
 
-
 ### Bug Fixes
 
-* try rebuild ([08c5837](https://github.com/rovacc/rovacc-nodejs-packages/commit/08c58371a6f21720c0dbb954dc21ec101fda760d))
+- try rebuild ([08c5837](https://github.com/rovacc/rovacc-nodejs-packages/commit/08c58371a6f21720c0dbb954dc21ec101fda760d))
 
 ## [0.3.0](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.2.3...vatsim-types-0.3.0) (2023-10-04)
 
-
 ### Features
 
-* adds vatsim connect type ([#22](https://github.com/rovacc/rovacc-nodejs-packages/issues/22)) ([6f290ce](https://github.com/rovacc/rovacc-nodejs-packages/commit/6f290ce749775213b2f37d796e8b7dffbd88ee1b))
-* try fix ([#23](https://github.com/rovacc/rovacc-nodejs-packages/issues/23)) ([3b68279](https://github.com/rovacc/rovacc-nodejs-packages/commit/3b68279bc1fe48f14f25b97028ad561c185952d5))
-
+- adds vatsim connect type ([#22](https://github.com/rovacc/rovacc-nodejs-packages/issues/22)) ([6f290ce](https://github.com/rovacc/rovacc-nodejs-packages/commit/6f290ce749775213b2f37d796e8b7dffbd88ee1b))
+- try fix ([#23](https://github.com/rovacc/rovacc-nodejs-packages/issues/23)) ([3b68279](https://github.com/rovacc/rovacc-nodejs-packages/commit/3b68279bc1fe48f14f25b97028ad561c185952d5))
 
 ### Bug Fixes
 
-* bump ([#20](https://github.com/rovacc/rovacc-nodejs-packages/issues/20)) ([7835cf9](https://github.com/rovacc/rovacc-nodejs-packages/commit/7835cf9eb4c47289872f0483e80233b7d50df67b))
-* bump ([#21](https://github.com/rovacc/rovacc-nodejs-packages/issues/21)) ([a27a56d](https://github.com/rovacc/rovacc-nodejs-packages/commit/a27a56d132f34545071a74f465b72fe4467c83dc))
-* convert interfaces to types ([#24](https://github.com/rovacc/rovacc-nodejs-packages/issues/24)) ([b55262d](https://github.com/rovacc/rovacc-nodejs-packages/commit/b55262dfd17aedc07f762f5fcd5a7217d7d63772))
-* refactor code ([0b59951](https://github.com/rovacc/rovacc-nodejs-packages/commit/0b5995148ea186bb15c64134edd3a623ffb77ec2))
-* try rebuild ([#25](https://github.com/rovacc/rovacc-nodejs-packages/issues/25)) ([d64fc6b](https://github.com/rovacc/rovacc-nodejs-packages/commit/d64fc6b4fe99c9e0b9ae89527e5d6e6c2f5c5e8b))
+- bump ([#20](https://github.com/rovacc/rovacc-nodejs-packages/issues/20)) ([7835cf9](https://github.com/rovacc/rovacc-nodejs-packages/commit/7835cf9eb4c47289872f0483e80233b7d50df67b))
+- bump ([#21](https://github.com/rovacc/rovacc-nodejs-packages/issues/21)) ([a27a56d](https://github.com/rovacc/rovacc-nodejs-packages/commit/a27a56d132f34545071a74f465b72fe4467c83dc))
+- convert interfaces to types ([#24](https://github.com/rovacc/rovacc-nodejs-packages/issues/24)) ([b55262d](https://github.com/rovacc/rovacc-nodejs-packages/commit/b55262dfd17aedc07f762f5fcd5a7217d7d63772))
+- refactor code ([0b59951](https://github.com/rovacc/rovacc-nodejs-packages/commit/0b5995148ea186bb15c64134edd3a623ffb77ec2))
+- try rebuild ([#25](https://github.com/rovacc/rovacc-nodejs-packages/issues/25)) ([d64fc6b](https://github.com/rovacc/rovacc-nodejs-packages/commit/d64fc6b4fe99c9e0b9ae89527e5d6e6c2f5c5e8b))
 
 ## [0.3.0](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.2.3...vatsim-types-0.3.0) (2023-10-04)
 

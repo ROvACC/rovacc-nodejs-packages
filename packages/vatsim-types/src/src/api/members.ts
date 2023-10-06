@@ -1,20 +1,26 @@
-export type VatsimRegion = 'AMAS' | 'APAC' | 'EMEA';
+type DiscordNicknameFormat = 'CID' | 'FIRST_NAME_CID' | 'FULL_NAME_CID';
 
-export interface VatsimRating {
-  rating: number;
-  code: string;
-  humanReadable: string;
-}
-
-export interface VatsimUser {
+export type RovaccMember = {
   id: string;
-  rating: VatsimRating;
-  pilotRating: VatsimRating;
-  militaryRating: VatsimRating;
-  suspDate: Date;
-  regDate: Date;
-  region: VatsimRegion;
-  division: string;
-  subdivision: string;
+  cid: string;
+  email: string;
+  country: string;
+  name: string;
+
+  discord: {
+    id: string | null;
+    format: DiscordNicknameFormat | null;
+  };
+  rating: number;
+  pilotRating: number;
+  militaryRating: number;
+
+  suspensionDate: Date | null;
+  registrationDate: Date;
+
+  region: string | null;
+  division: string | null;
+  subdivision: string | null;
+
   lastRatingChange: Date;
-}
+};

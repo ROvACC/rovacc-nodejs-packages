@@ -1,0 +1,18 @@
+export const movementareas: Record<string, string> = {
+  MA: 'Movement area',
+  MB: 'Bearing strength',
+  MC: 'Clearway',
+  MD: 'Declared distances',
+  MG: 'Taxiing guidance system',
+  MH: 'Runway arresting gear',
+  MK: 'Parking area',
+  MM: 'Daylight markings',
+  MN: 'Apron',
+  MP: 'Aircraft stands',
+  MR: 'Runway',
+  MS: 'Stopway',
+  MT: 'Threshold',
+  MU: 'Runway turning bay',
+  MW: 'Strip',
+  MX: 'Taxiway',
+};

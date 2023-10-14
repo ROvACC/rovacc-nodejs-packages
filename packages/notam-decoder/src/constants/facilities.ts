@@ -1,0 +1,18 @@
+export const facilities: Record<string, string> = {
+  FA: 'airport',
+  FB: 'Braking action measurement equipment',
+  FC: 'Ceiling measurement equipment',
+  FD: 'Docking system',
+  FF: 'Fire fighting and rescue',
+  FG: 'Ground movement control',
+  FH: 'Helicopter alighting area/platform',
+  FL: 'Landing direction indicator',
+  FM: 'Meteorological service',
+  FO: 'Fog dispersal system',
+  FP: 'Heliport',
+  FS: 'Snow removal equipment',
+  FT: 'Transmissometer',
+  FU: 'Fuel availability',
+  FW: 'Wind direction indicator',
+  FZ: 'Customs',
+};

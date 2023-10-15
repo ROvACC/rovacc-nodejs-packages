@@ -1,4 +1,4 @@
-import { DecodedNotam, NotamType } from '../types';
+import { DecodedNotam, NotamType } from '../../types';
 
 const reducer = (notam: DecodedNotam, line: string): DecodedNotam => {
   if (notam.metadata.parsedA) {

@@ -17,25 +17,26 @@ const reducer = (notam: DecodedNotam, line: string): DecodedNotam => {
     const translation: string[] = [];
     const splitted = extracted.split(' ');
 
-    // To match punctuation at the end of a word
     const punctuationRegex = /([.,;:!?-]+)$/;
 
     for (const word of splitted) {
-      // Check if there's punctuation at the end of the word
       const match = word.match(punctuationRegex);
-      const punctuation = match ? match[1] : ''; // Stores punctuation, if any
-      const cleanWord = word.replace(punctuationRegex, ''); // Removes punctuation, if any
+      const punctuation = match ? match[1] : '';
+      const cleanWord = word.replace(punctuationRegex, '');
 
       if (abbr[cleanWord]) {
         translation.push(abbr[cleanWord].toUpperCase() + punctuation);
       } else if (
-        !isNaN(parseInt(cleanWord.substr(3))) &&
-        abbr[cleanWord.substr(0, 3)]
+        !isNaN(parseInt(cleanWord.substring(3))) &&
+        abbr[cleanWord.substring(0, 3)]
       ) {
         translation.push(
-          `${abbr[cleanWord.substr(0, 3)].toUpperCase()} ${cleanWord.substr(
-            3
-          )}${punctuation}`
+          [
+            abbr[cleanWord.substring(0, 3)].toUpperCase(),
+            ' ',
+            cleanWord.substring(3),
+            punctuation,
+          ].join()
         );
       } else {
         translation.push(cleanWord + punctuation);

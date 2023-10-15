@@ -35,7 +35,6 @@ describe('reducer function', () => {
       'line matching dateEndPermanentOrEstimate'
     );
     expect(result.metadata.parsedC).to.be.true;
-    // ... other assertions based on mocked return of dateEndPermanentOrEstimate ...
   });
 
   it('recognizes a line parsed by permanentOrEstimated', () => {
@@ -46,7 +45,6 @@ describe('reducer function', () => {
     });
     const result = reducer(mockNotam, 'line matching permanentOrEstimated');
     expect(result.metadata.parsedC).to.be.true;
-    // ... other assertions based on mocked return of permanentOrEstimated ...
   });
 
   it('returns the notam unchanged for unrecognized lines', () => {

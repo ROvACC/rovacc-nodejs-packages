@@ -16,7 +16,7 @@ const reducer = (notam: DecodedNotam, line: string): DecodedNotam => {
     }
 
     let type: NotamType;
-    let affected;
+    let affected: string | undefined;
 
     switch (matches[1]) {
       case 'NOTAMN':

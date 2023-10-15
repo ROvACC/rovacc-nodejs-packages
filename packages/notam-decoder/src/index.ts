@@ -1,3 +1,4 @@
+export { decode } from './parse';
 export type {
   NotamType,
   DecodedNotam,
@@ -5,4 +6,3 @@ export type {
   RulesTypes,
   AttentionType,
 } from './types';
-export { decode } from './parse';

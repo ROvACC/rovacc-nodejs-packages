@@ -1,0 +1,17 @@
+export const warnings: Record<string, string> = {
+  WA: 'Air display',
+  WB: 'Aerobatics',
+  WC: 'Captive balloon or kite',
+  WD: 'Demolition of explosives',
+  WE: 'Exercises',
+  WF: 'Air refueling',
+  WG: 'Glider flying',
+  WJ: 'Banner/target towing',
+  WL: 'Ascent of free balloon',
+  WM: 'Missile, gun or rocket firing',
+  WP: 'Parachute jumping exercise',
+  WS: 'Burning or blowing gas',
+  WT: 'Mass movement of aircraft',
+  WV: 'Formation flight',
+  WZ: 'model flying',
+};

@@ -1,0 +1,15 @@
+export const volmet: Record<string, string> = {
+  SA: 'Automatic terminal information service',
+  SB: 'ATS reporting office',
+  SC: 'Area control center',
+  SE: 'Flight information service',
+  SF: 'Airport flight information service',
+  SL: 'Flow control centre',
+  SO: 'Oceanic area control centre',
+  SP: 'Approach control service',
+  SS: 'Flight service station',
+  ST: 'Airport control tower',
+  SU: 'Upper area control centre',
+  SV: 'VOLMET broadcast',
+  SY: 'Upper advisory service',
+};

@@ -1,0 +1,17 @@
+export const changes: Record<string, string> = {
+  CA: 'Activated',
+  CC: 'Completed',
+  CD: 'Deactivated',
+  CE: 'Erected',
+  CF: 'Operating frequency(ies) changed to',
+  CG: 'Downgraded to',
+  CH: 'Changed',
+  CI: 'dentification or radio call sign changed to',
+  CL: 'Realigned',
+  CM: 'Displaced',
+  CO: 'Operating',
+  CP: 'Operating on reduced power',
+  CR: 'Temporarily replaced by',
+  CS: 'Installed',
+  CT: 'On test, do not use',
+};

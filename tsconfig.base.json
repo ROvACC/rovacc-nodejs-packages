@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@rovacc/notam-decoder": ["packages/notam-decoder/src/index.ts"],
       "@rovacc/training-events-types": [
         "packages/training-events-types/src/index.ts"
       ],

@@ -1,0 +1,16 @@
+export const airtraffic: Record<string, string> = {
+  PA: 'Standard instrument arrival',
+  PD: 'Standard instrument departure',
+  PF: 'Flow control procedure',
+  PH: 'Holding procedure',
+  PI: 'Instrument approach procedure',
+  PL: 'Obstacle clearance limit',
+  PM: 'Aerodrome operating minima',
+  PO: 'Obstacle clearance altitude',
+  PP: 'Obstacle clearance height',
+  PR: 'Radio failure procedure',
+  PT: 'Transition altitude',
+  PU: 'Missed approach procedure',
+  PX: 'Minimum holding altitude',
+  PZ: 'ADIZ procedure',
+};

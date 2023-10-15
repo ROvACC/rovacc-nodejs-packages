@@ -1,0 +1,17 @@
+export const availability: Record<string, string> = {
+  AC: 'Withdrawn for maintenance',
+  AD: 'Available for daylight operation',
+  AF: 'Flight checked and found reliable',
+  AG: 'Operating but ground checked only, awaiting flight check',
+  AH: 'Hours of service are now',
+  AK: 'Resumed normal operations',
+  AM: 'Military operations only',
+  AN: 'Available for night operation',
+  AO: 'Operational',
+  AP: 'Available, prior permission required',
+  AR: 'Available on request',
+  AS: 'Unserviceable',
+  AU: 'Not available',
+  AW: 'Completely withdrawn',
+  AX: 'Previously promulgated shutdown has been cancelled',
+};

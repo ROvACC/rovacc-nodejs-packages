@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.1](https://github.com/rovacc/rovacc-nodejs-packages/compare/notam-decoder-0.1.0...notam-decoder-0.1.1) (2023-10-15)
+
+
+### Bug Fixes
+
+* try republish ([9cb4448](https://github.com/rovacc/rovacc-nodejs-packages/commit/9cb4448b5e14280d181b03d57ddaa766cc4b0575))
+
 ## 0.1.0 (2023-10-15)
 
 ### Features

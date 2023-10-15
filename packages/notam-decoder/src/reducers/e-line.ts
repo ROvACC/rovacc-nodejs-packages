@@ -18,7 +18,7 @@ const reducer = (notam: DecodedNotam, line: string): DecodedNotam => {
     const splitted = extracted.split(' ');
 
     // To match punctuation at the end of a word
-    const punctuationRegex = /([.,;:!?\-]+)$/;
+    const punctuationRegex = /([.,;:!?-]+)$/;
 
     for (const word of splitted) {
       // Check if there's punctuation at the end of the word

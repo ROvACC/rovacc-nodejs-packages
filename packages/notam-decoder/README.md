@@ -1,11 +1,7 @@
-# notam-decoder
+# NOTAM DECODER
 
-This library was generated with [Nx](https://nx.dev).
+This is a general purpose NOTAM Decoder.
 
-## Building
+## Usage
 
-Run `nx build notam-decoder` to build the library.
-
-## Running unit tests
-
-Run `nx test notam-decoder` to execute the unit tests via [Jest](https://jestjs.io).
+TBA

@@ -13,6 +13,7 @@ export type ScopeType =
   | 'Checklist'
   | 'Airport/Enroute warning'
   | 'Airport/Navigation warning';
+
 export type NotamType = 'new' | 'cancel' | 'replace';
 
 export type DecodedNotam = {

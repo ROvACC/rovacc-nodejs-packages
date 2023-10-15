@@ -1,5 +1,5 @@
-import { DecodedNotam } from '../types';
-import { abbr } from '../constants/abbr';
+import { DecodedNotam } from '../../types';
+import { abbr } from '../../constants/abbr';
 
 const reducer = (notam: DecodedNotam, line: string): DecodedNotam => {
   if (notam.metadata.parsedE) {

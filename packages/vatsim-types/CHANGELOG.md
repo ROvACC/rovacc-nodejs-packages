@@ -4,10 +4,9 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 ## [0.5.0](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.4.0...vatsim-types-0.5.0) (2023-10-06)
 
-
 ### Features
 
-* adds discord nickname type ([#27](https://github.com/rovacc/rovacc-nodejs-packages/issues/27)) ([3ebc20e](https://github.com/rovacc/rovacc-nodejs-packages/commit/3ebc20eb24d2b3904583fbe88fd255b70f9e3a34))
+- adds discord nickname type ([#27](https://github.com/rovacc/rovacc-nodejs-packages/issues/27)) ([3ebc20e](https://github.com/rovacc/rovacc-nodejs-packages/commit/3ebc20eb24d2b3904583fbe88fd255b70f9e3a34))
 
 ## [0.3.1](https://github.com/rovacc/rovacc-nodejs-packages/compare/vatsim-types-0.3.0...vatsim-types-0.3.1) (2023-10-04)
 

@@ -1,19 +1,19 @@
-import { airspace } from '../../constants/airspace';
-import { airtraffic } from '../../constants/airtraffic';
-import { availability } from '../../constants/availability';
-import { changes } from '../../constants/changes';
-import { comradar } from '../../constants/comradar';
-import { facilities } from '../../constants/facilities';
-import { hazardous } from '../../constants/hazardous';
-import { information } from '../../constants/information';
-import { instrumentlanding } from '../../constants/instrumentlanding';
-import { lightingfacilities } from '../../constants/lightingfacilities';
-import { limitations } from '../../constants/limitations';
-import { movementareas } from '../../constants/movementareas';
-import { navigationwarning } from '../../constants/navigationwarning';
-import { terminalfacilities } from '../../constants/terminalfacilities';
-import { volmet } from '../../constants/volmet';
-import { warnings } from '../../constants/warnings';
+import { airspace } from '../../../constants/airspace';
+import { airtraffic } from '../../../constants/airtraffic';
+import { availability } from '../../../constants/availability';
+import { changes } from '../../../constants/changes';
+import { comradar } from '../../../constants/comradar';
+import { facilities } from '../../../constants/facilities';
+import { hazardous } from '../../../constants/hazardous';
+import { information } from '../../../constants/information';
+import { instrumentlanding } from '../../../constants/instrumentlanding';
+import { lightingfacilities } from '../../../constants/lightingfacilities';
+import { limitations } from '../../../constants/limitations';
+import { movementareas } from '../../../constants/movementareas';
+import { navigationwarning } from '../../../constants/navigationwarning';
+import { terminalfacilities } from '../../../constants/terminalfacilities';
+import { volmet } from '../../../constants/volmet';
+import { warnings } from '../../../constants/warnings';
 
 export function parseCode(code: string): string {
   const codeArray = Array.from(code);
